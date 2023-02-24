@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    /* ---- COLORS ----- */
+    --primary: hsl(220, 98%, 61%);
+    --background: linear-gradient(90deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    
+    /* Light theme */
+    --vlight-g: hsl(0, 0%, 98%);
+    --vlight-gb: hsl(236, 33%, 92%);
+    --light-gb-lt: hsl(233, 11%, 84%);
+    --dark-gb-lt: hsl(236, 9%, 61%);
+    --vdark-gb-lt: hsl(235, 19%, 35%);
+
+    /* Dark theme */
+    --vdark-b: hsl(235, 21%, 11%);
+    --vdark-desat-b: hsl(235, 24%, 19%);
+    --light-gb-dk: hsl(234, 39%, 85%);
+    --light-gb-dk-hover: hsl(236, 33%, 92%);
+    --dark-gb-dk: hsl(234, 11%, 52%);
+    --vdark-gb-dk: hsl(233, 14%, 35%);
+    --vdark-gb: hsl(237, 14%, 26%);
+}
+
+
+/*----STYLES----*/
+body {
+    margin: 0;
+    height: 100vh;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (min-width: 1440px) {
+
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+
+}
