@@ -1,3 +1,12 @@
 <div class="todo-card">
-    <p>{{ todo.desc }}</p>
+    <p>
+        <fa-icon
+        [icon] = "faCircle"
+        ></fa-icon>
+        {{ todo.desc }}
+        <fa-icon 
+        (click)="onDelete(todo)"
+        [icon] = "faCircleXmark"
+        ></fa-icon>
+    </p>
 </div>
