@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  title: string = 'To do app';
+  title: string = 'Another To-do app';
 
   themeToggle() {
     console.log("toggle");
